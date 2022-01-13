@@ -16,12 +16,12 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.kaan1212 }}
-          password: ${{ secrets.A135a531*135 }}
+          username: ${{ kaan1212 }}
+          password: ${{ A135a531*135 }}
       -
         name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: ${{ secrets.kaan1212 }}/sample-app-image:latest
+          tags: ${{ kaan1212 }}/sample-app-image:latest
